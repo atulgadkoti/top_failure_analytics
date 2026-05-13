@@ -21,8 +21,8 @@ function App() {
     setLoading(true);
 
     fetch(
-      `http://top-failure-analytics.onrender.com/api/analytics/top-failures/${selectedCustomer}`
-    )
+  `https://top-failure-analytics.onrender.com/api/analytics/top-failures/${selectedCustomer}`
+)
       .then((res) => res.json())
       .then((result) => {
         setData(result.data);
