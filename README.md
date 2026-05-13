@@ -32,7 +32,7 @@ top_failure_analytics/
 
 `GET /api/analytics/top-failures/:customer_id`
 
-Response (200):
+Response :
 
 ```json
 {
