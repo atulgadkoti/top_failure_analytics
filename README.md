@@ -23,14 +23,15 @@ A full-stack analytics dashboard that helps SaaS companies identify the **top 3 
 
 ---
 ## 📁 Project Structure
+
+```text
 top_failure_analytics/
-│
-├── frontend/ # React UI (Vercel)
-├── backend/ # Express API (Render)
-│ ├── server.js
-│ ├── db.js
-│ └── query.sql
-└── README.md
+├── frontend/          # React UI (Vercel)
+└── backend/           # Express API (Render)
+    ├── server.js      # Main API logic
+    ├── db.js          # Database connection
+    └── query.sql      # SQL Schema & Logic
+├── README.md
 
 API Endpoint
 
@@ -38,7 +39,9 @@ API Endpoint
 
 GET /api/analytics/top-failures/:customer_id
 
-## Example Response
+---
+
+##  Example Response
 
 ```json
 {
