@@ -5,14 +5,12 @@ type FailureData = {
   failure_category: string;
   ticket_count: string;
 };
-
   const customers = [
   { id: 1, name: "Atul Gadkoti" },
   { id: 2, name: "Kshitiz Rai" },
   { id: 3, name: "Aniket Munjal" },
   { id: 4, name: "Shubham Kumar" },
 ];
-
 
 function App() {
   const [selectedCustomer, setSelectedCustomer] = useState(1);
@@ -76,8 +74,6 @@ function App() {
         >
           Most common unresolved support issues
         </p>
-
-        {/* CUSTOMER SELECTOR */}
         <div style={{ marginBottom: "24px" }}>
           <label
             style={{
@@ -108,8 +104,6 @@ function App() {
             ))}
           </select>
         </div>
-
-        {/* LOADING STATE */}
         {loading && (
           <div>
             {[1, 2, 3].map((item) => (
@@ -137,7 +131,6 @@ function App() {
           </div>
         )}
 
-        {/* EMPTY STATE */}
         {!loading && data.length === 0 && (
           <div
             style={{
@@ -175,8 +168,6 @@ function App() {
             </p>
           </div>
         )}
-
-        {/* POPULATED STATE */}
         {!loading &&
           data.length > 0 &&
           data.map((item) => (
