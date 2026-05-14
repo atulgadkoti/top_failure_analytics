@@ -32,6 +32,10 @@ top_failure_analytics/
 
 `GET /api/analytics/top-failures/:customer_id`
 
+### Example Request
+
+GET https://top-failure-analytics.onrender.com/api/analytics/top-failures/1
+
 Response :
 
 ```json
